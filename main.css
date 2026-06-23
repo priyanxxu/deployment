@@ -63,7 +63,8 @@
      padding: 28px;
      border-radius: 22px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
-     transition: .25s
+     transition: .25s;
+     align-items: center;
  }
 
  .card:hover {
@@ -89,7 +90,8 @@
      text-decoration: none;
      padding: 12px 18px;
      border-radius: 12px;
-     font-weight: 700
+     font-weight: 700;
+     text-align: center;
  }
 
  .btn:hover {
