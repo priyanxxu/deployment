@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Store</title>
+  <link rel="stylesheet" href="product/product.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-left-section">
+
+      <div class="logo">
+        <h4>Product Listing Page with Filtering and Sorting Options</h4>
+      </div>
+
+      <div class="tools-row">
+
+        <input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+
+        <select onchange="sortProducts(this.value)">
+          <option value="">Sort</option>
+          <option value="low">Price Low to High</option>
+          <option value="high">Price High to Low</option>
+        </select>
+
+        <select onchange="filterPrice(this.value)">
+          <option value="">Filter Price</option>
+          <option value="500">Under ₹500</option>
+          <option value="1000">Under ₹1000</option>
+          <option value="1500">Under ₹1500</option>
+          <option value="2000">Under ₹2000</option>
+          <option value="2500">Under ₹2500</option>
+          <option value="100000">Above ₹2500</option>
+        </select>
+
+        <div class="cart" onclick="openCart()">
+  🛒 Cart: <span id="cartCount">0</span>
+</div>
+      </div>
+
+    </div>
+    <div class="nav-right-section">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="portfolio.html" class="nav-btn">Portfolio</a>
+      <a href="list/list.html" class="nav-btn">To do List</a>
+    </div>
+
+  </nav>
+
+  <div class="container">
+    <div id="productList"></div>
+  </div>
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+
+  <div class="cart-header">
+    <h2>Shopping Cart</h2>
+    <span class="close-cart" onclick="closeCart()">&times;</span>
+  </div>
+
+  <div id="cartItems"></div>
+
+  <div class="cart-footer">
+    <h3>Total: ₹<span id="totalPrice">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+</div>
+
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Customer Service</h3>
+        <a href="">My Account</a>
+        <a href="">Order Tracking</a>
+        <a href="">Returns</a>
+        <a href="">Help Center</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>Email: support@clone.com</p>
+        <p>Phone: +91 9999 6666 11</p>
+        <p>Location: Ghaziabad</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Priyanshu Kumar | ROLL.NO: 2503201000871 | SECTION: CSE 26</p>
+    </div>
+  </footer>
+
+  <script src="product/product.js">
+  </script>
+
+</body>
+
+</html>

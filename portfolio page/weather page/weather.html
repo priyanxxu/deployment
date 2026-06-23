@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<link rel="stylesheet" href="weather.css">
+<body>
+
+<div class="weather-card">
+
+    <div class="search-box">
+        <input type="text" id="city" placeholder="Enter City Name">
+        <button onclick="getWeather()">🔍</button>
+    </div>
+
+    <div class="weather-box" id="result">
+
+        <div class="icon">☁</div>
+
+        <h1 id="temp"></h1>
+        <h2 id="cityName"></h2>
+        <p id="condition"></p>
+
+        <div class="details">
+
+            <div class="info-box">
+                <span><img src="https://thumbs.dreamstime.com/b/humidity-icon-bold-outline-design-editable-stroke-width-vector-illustration-humidity-icon-251289339.jpg" alt=""></span>
+                <h3 id="humidity"></h3>
+                <p>Humidity</p>
+            </div>
+
+            <div class="info-box">
+                <span><img src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-wind-icon-png-image_925468.jpg" alt=""></span>
+                <h3 id="wind"></h3>
+                <p>Wind Speed</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<footer>&copy; Priyanshu Kumar | ROLL.NO: 2503201000871 | SECTION: CSE 26</footer>
+<script src="weather.js"></script>
+</body>
+</html>
