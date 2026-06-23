@@ -197,3 +197,40 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+@media(max-width:480px) {
+    body {
+        padding: 18px;
+    }
+
+    .weather-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .weather-box h1 {
+        font-size: 48px;
+    }
+
+    .weather-box h2 {
+        font-size: 28px;
+    }
+
+    .details {
+        gap: 12px;
+    }
+
+    .info-box span {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

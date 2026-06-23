@@ -137,3 +137,31 @@ footer {
         margin-left: 0;
     }
 }
+
+@media(max-width:480px) {
+    body {
+        padding: 12px;
+    }
+
+    div {
+        padding: 18px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 12px 14px;
+    }
+
+    li {
+        gap: 8px;
+    }
+
+    footer {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

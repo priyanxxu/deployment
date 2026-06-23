@@ -95,6 +95,41 @@ footer {
     }
 }
 
+@media(max-width:480px){
+    body {
+        padding-bottom: 80px;
+    }
+
+    div{
+        width:100%;
+        padding:18px;
+        margin:16px 10px;
+    }
+
+    #question{
+        font-size:18px;
+    }
+
+    #answers{
+        padding:16px;
+    }
+
+    #answers label{
+        padding:10px;
+        font-size:14px;
+    }
+
+    button{
+        padding:12px;
+        font-size:16px;
+    }
+
+    footer{
+        position: static;
+        padding:14px;
+    }
+}
+
 @media(min-width:721px) and (max-width:1080px){
     div{
         width:80%;
